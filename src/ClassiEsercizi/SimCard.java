@@ -17,7 +17,7 @@ public class SimCard {
         System.out.println("Ultime 5 chiamate:");
         for (int i = 0; i < this.ultime5Chiamate.length; i++) {
             if(this.ultime5Chiamate[i] != null) {
-                System.out.println(i + "- " + ultime5Chiamate[i]);
+                System.out.println((i +1) + "- " + ultime5Chiamate[i]);
             }
         }
 

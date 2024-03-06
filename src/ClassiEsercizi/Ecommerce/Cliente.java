@@ -9,6 +9,7 @@ public class Cliente {
         this.cognome = cognome;
         this.email = email;
         this.dataIscrizione = dataIscrizione;
+        System.out.println("Creato cliente ID" + codiceCliente);
     }
 
     public String getNome() {
@@ -42,6 +43,8 @@ public class Cliente {
         this.codiceCliente = codiceCliente;
     }
 
-
+    public String toString(){
+        return "Cliente " + this.nome + " " + this.cognome + " " + " email " + email + " Data registrazione " + dataIscrizione;
+    }
 
 }

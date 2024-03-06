@@ -31,12 +31,15 @@ public class Articolo {
         this.pieces = pieces;
     }
 
-    public Articolo(int codiceArticolo, int prezzo, String descrizioneArticolo) {
+    public Articolo(int codiceArticolo, int prezzo, String descrizioneArticolo, int magazzino) {
         this.codiceArticolo = codiceArticolo;
         this.prezzo = prezzo;
         this.descrizioneArticolo = descrizioneArticolo;
+        this.pieces = magazzino;
     }
 
-
+public String toString(){
+        return this.descrizioneArticolo + " €" + this.prezzo + " ID:" + this.codiceArticolo + " rimanenza:" + this.pieces;
+}
 
 }

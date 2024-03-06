@@ -49,7 +49,7 @@ if(arrayDiArticoliPerCarrello[i] != null){
     }
 
     public void stampaCarrello(){
-        System.out.print("Carrello di " + this.clienteAssociato.getNome() + " " + this.clienteAssociato.getCognome()+", ID:" + this.clienteAssociato.getCodiceCliente()+ ", EMAIL " +this.clienteAssociato.getEmail() + " cliente dal " + this.clienteAssociato.getDataIscrizione());
+        System.out.println("Carrello di " + this.clienteAssociato.getNome() + " " + this.clienteAssociato.getCognome()+", ID:" + this.clienteAssociato.getCodiceCliente()+ ", EMAIL " +this.clienteAssociato.getEmail() + " cliente dal " + this.clienteAssociato.getDataIscrizione());
         for (int i = 0; i < this.arrayDiArticoliPerCarrello.length; i++) {
             if(this.arrayDiArticoliPerCarrello[i] != null) {
                 System.out.println(i + "- " + arrayDiArticoliPerCarrello[i]);
